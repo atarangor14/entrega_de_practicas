@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="atara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-13 09:16:16 a. m."/>
+        <attribute name="created" value="YXRhcmE7TEFQVE9QLTQyS1I1MTM4OzIwMTgtMDktMTM7MDg6NTc6MzIgYS4gbS47Mjk2NA=="/>
+        <attribute name="edited" value="YXRhcmE7TEFQVE9QLTQyS1I1MTM4OzIwMTgtMDktMTM7MDk6MTY6MTYgYS4gbS47MTszMDcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;DAME LA VELOCIDAD INICIAL&quot;" newline="True"/>
+            <declare name="rInicial" type="Real" array="False" size=""/>
+            <input variable="rInicial"/>
+            <output expression="&quot;DAME LA VELOCIDAD FINAL &quot;" newline="True"/>
+            <declare name="rFinal" type="Real" array="False" size=""/>
+            <input variable="rFinal"/>
+            <output expression="&quot;DAME EL TIEMPO&quot;" newline="True"/>
+            <declare name="rTiempo" type="Real" array="False" size=""/>
+            <input variable="rTiempo"/>
+            <declare name="rDistancia" type="Real" array="False" size=""/>
+            <assign variable="rDistancia" expression="((rInicial + rFinal)/2) * rTiempo"/>
+            <output expression="&quot;LA DISTASNCIA RECORRIDA ES &quot;" newline="True"/>
+            <output expression="rDistancia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

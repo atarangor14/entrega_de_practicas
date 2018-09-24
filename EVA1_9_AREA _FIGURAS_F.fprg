@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="atara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-13 09:45:16 a. m."/>
+        <attribute name="created" value="YXRhcmE7TEFQVE9QLTQyS1I1MTM4OzIwMTgtMDktMTM7MDk6MTg6MTMgYS4gbS47Mjk2MQ=="/>
+        <attribute name="edited" value="YXRhcmE7TEFQVE9QLTQyS1I1MTM4OzIwMTgtMDktMTM7MDk6NDU6MTYgYS4gbS47MTszMDcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;DAME LA BASE MAYOR&quot;" newline="True"/>
+            <declare name="rMayor" type="Real" array="False" size=""/>
+            <input variable="rMayor"/>
+            <output expression="&quot;DAME LA BASE MENOR &quot;" newline="True"/>
+            <declare name="rMenor" type="Real" array="False" size=""/>
+            <input variable="rMenor"/>
+            <output expression="&quot;DAME LA  ALTURA&quot;" newline="True"/>
+            <declare name="rAltura" type="Real" array="False" size=""/>
+            <input variable="rAltura"/>
+            <declare name="rArea" type="Real" array="False" size=""/>
+            <assign variable="rArea" expression="((rMayor+rMenor)/2)*2"/>
+            <output expression="&quot;LA AREA DEL TRAPECIO ES: &quot;" newline="False"/>
+            <output expression="rArea" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="atara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-24 02:27:18 a. m."/>
+        <attribute name="created" value="YXRhcmE7TEFQVE9QLTQyS1I1MTM4OzIwMTgtMDktMjQ7MDE6MzE6MzIgYS4gbS47Mjk1MQ=="/>
+        <attribute name="edited" value="YXRhcmE7TEFQVE9QLTQyS1I1MTM4OzIwMTgtMDktMjQ7MDI6Mjc6MTggYS4gbS47MTszMDY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;operaciones con fracciones&quot;" newline="True"/>
+            <output expression="&quot;primera fraccion&quot;" newline="True"/>
+            <output expression="&quot;dame el numerador &quot;" newline="True"/>
+            <declare name="numf1" type="Integer" array="False" size=""/>
+            <input variable="numf1"/>
+            <output expression="&quot;dame el denominador&quot;" newline="True"/>
+            <declare name="denom1" type="Integer" array="False" size=""/>
+            <input variable="denom1"/>
+            <output expression="&quot;dame la segunda fraccion&quot;" newline="True"/>
+            <output expression="&quot;dame el numerador &quot;" newline="True"/>
+            <declare name="numf2" type="Integer" array="False" size=""/>
+            <input variable="numf2"/>
+            <output expression="&quot;dame el denominador&quot;" newline="True"/>
+            <declare name="denom2" type="Integer" array="False" size=""/>
+            <input variable="denom2"/>
+            <output expression="&quot;que operacion quieres hacer 1- multiplicar 2-restar 3-sumar&quot;" newline="True"/>
+            <declare name="eRespuesta" type="Integer" array="False" size=""/>
+            <input variable="eRespuesta"/>
+            <declare name="valor1" type="Integer" array="False" size=""/>
+            <declare name="valor2" type="Integer" array="False" size=""/>
+            <if expression="eRespuesta=1">
+                <then>
+                    <assign variable="valor1" expression="numf1*numf2"/>
+                    <assign variable="valor2" expression="denom1*denom2"/>
+                </then>
+                <else>
+                    <if expression="eRespuesta=2">
+                        <then>
+                            <assign variable="valor1" expression="(numf1*denom2)-(denom1*numf2)"/>
+                            <assign variable="valor2" expression="denom1*denom2"/>
+                        </then>
+                        <else>
+                            <assign variable="valor1" expression="(numf1*denom2)+(denom1*numf2)"/>
+                            <assign variable="valor2" expression="denom1*denom2"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;el resultado es &quot;" newline="True"/>
+            <output expression="valor1" newline="False"/>
+            <output expression="&quot;/&quot;" newline="False"/>
+            <output expression="valor2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
