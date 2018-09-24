@@ -1,0 +1,73 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "operaciones con fracciones" << endl;
+    cout << "primera fraccion" << endl;
+    cout << "dame el numerador " << endl;
+    int numf1;
+    
+    cin >> numf1;
+    cout << "dame el denominador" << endl;
+    int denom1;
+    
+    cin >> denom1;
+    cout << "dame la segunda fraccion" << endl;
+    cout << "dame el numerador " << endl;
+    int numf2;
+    
+    cin >> numf2;
+    cout << "dame el denominador" << endl;
+    int denom2;
+    
+    cin >> denom2;
+    cout << "que operacion quieres hacer 1- multiplicar 2-restar 3-sumar" << endl;
+    int eRespuesta;
+    
+    cin >> eRespuesta;
+    int valor1;
+    int valor2;
+    
+    if (eRespuesta == 1) {
+        valor1 = numf1 * numf2;
+        valor2 = denom1 * denom2;
+    } else {
+        if (eRespuesta == 2) {
+            valor1 = numf1 * denom2 - denom1 * numf2;
+            valor2 = denom1 * denom2;
+        } else {
+            valor1 = numf1 * denom2 + denom1 * numf2;
+            valor2 = denom1 * denom2;
+        }
+    }
+    cout << "el resultado es " << endl;
+    cout << valor1;
+    cout << "/";
+    cout << valor2 << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}
