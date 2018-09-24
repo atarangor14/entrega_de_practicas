@@ -1,0 +1,10 @@
+#print("DAME LA BASE MAYOR")
+rMayor = float(input())
+print("DAME LA BASE MENOR ")
+rMenor = float(input())
+print("DAME LA  ALTURA")
+rAltura = float(input())
+rArea = (rMayor + rMenor) / 2 * 2
+print("LA AREA DEL TRAPECIO ES: ", end='', flush=True)
+print(rArea)
+

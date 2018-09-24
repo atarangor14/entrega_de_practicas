@@ -1,0 +1,27 @@
+print("operaciones con fracciones")
+print("primera fraccion")
+print("dame el numerador ")
+numf1 = int(input())
+print("dame el denominador")
+denom1 = int(input())
+print("dame la segunda fraccion")
+print("dame el numerador ")
+numf2 = int(input())
+print("dame el denominador")
+denom2 = int(input())
+print("que operacion quieres hacer 1- multiplicar 2-restar 3-sumar")
+eRespuesta = int(input())
+if eRespuesta == 1:
+    valor1 = numf1 * numf2
+    valor2 = denom1 * denom2
+else:
+    if eRespuesta == 2:
+        valor1 = numf1 * denom2 - denom1 * numf2
+        valor2 = denom1 * denom2
+    else:
+        valor1 = numf1 * denom2 + denom1 * numf2
+        valor2 = denom1 * denom2
+print("el resultado es ")
+print(valor1, end='', flush=True)
+print("/", end='', flush=True)
+print(valor2)

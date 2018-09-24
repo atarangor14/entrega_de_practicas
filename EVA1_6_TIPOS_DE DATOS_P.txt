@@ -1,0 +1,4 @@
+print("DAME TU NOMBRE")
+sNombre = input()
+print("TU NOMBRE ES: ")
+print(sNombre)

@@ -1,0 +1,8 @@
+print("Dame tu nombre")
+sNombre = input()
+print("Que edad  tienes ?")
+iEdad = int(input())
+print("Tu nombre es: ", end='', flush=True)
+print(sNombre)
+print("y tu año de nacimiento es")
+print(2018 - iEdad)
